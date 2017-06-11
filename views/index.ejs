@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MY APP</title>
+</head>
+<body>
+  <h1>用户信息列表</h1>
+
+  <ul class="quotes">
+  <% for(var i=0; i<quotes.length; i++) {%>
+    <li class="quote">
+      <span><%= quotes[i].first_name %></span>
+      <span><%= quotes[i].last_name %></span>
+      <span><%= quotes[i].email %></span>
+    </li>
+  <% } %>
+  </ul>
+
+</body>
+</html>
