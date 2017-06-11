@@ -6,7 +6,7 @@ var jiji = 0;
 var  jiou = 0;
 var ouji = 0; 
 var ouou = 0;
-var threshold = 2;
+var threshold = 1;
 
 console.log("inside fetchdata.js");
 
