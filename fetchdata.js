@@ -8,6 +8,7 @@ var ouji = 0;
 var ouou = 0;
 var threshold = 1;
 
+
 console.log("inside fetchdata.js");
 
 function parseLotteryData(lottery) {
