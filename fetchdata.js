@@ -83,9 +83,15 @@ function sendEmail(content, threshold) {
 	    }
 	});
 
+	var maillist = [
+		'wanghao313@126.com', 
+		'124847605@qq.com',
+	];
+	maillist.toString();
+
 	var mailOptions = {
 		  from: 'wanghao313@gmail.com',
-		  to: 'wanghao313@126.com',
+		  to: maillist,
 		  subject: content +  threshold,
 		  text: content +  threshold
 	};
@@ -138,7 +144,7 @@ function fetchLotteryData() {
 }
 
 ontime({
-	cycle: ['03:00', '13:00', '23:00', '33:00', '43:00', '53:00']
+	cycle: ['05:00', '15:00', '25:00', '35:00', '45:00', '55:00']
 }, function(ot) {
 	var date = new Date();
 	var min = date.getMinutes();
