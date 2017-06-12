@@ -76,7 +76,7 @@ function checkInSet(id, data) {
 
 function sendEmail(content, threshold) {
 
-	let transporter = nodemailer.createTransport({
+	var transporter = nodemailer.createTransport({
 	    host: 'smtp.gmail.com',
 	    auth: {
 	        user: 'wanghao313@gmail.com',
