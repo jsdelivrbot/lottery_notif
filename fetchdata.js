@@ -75,11 +75,16 @@ function checkInSet(id, data) {
 
 function sendEmail(content, threshold) {
 	var transporter = nodemailer.createTransport({
-			  service: 'gmail',
-			  auth: {
-			    user: 'wanghao313@gmail.com',
-			    pass: 'jwl12345!'
-			  }
+			  service: 'Gmail',
+			   auth: {
+				    XOAuth2: {
+				      user: "wanghao313", // Your gmail address.
+				                                          // Not @developer.gserviceaccount.com
+				      clientId: "580098852229-1m12bmhcklpke8i0ocqfif2lih8ti81n.apps.googleusercontent.com",
+				      clientSecret: "G6wYs8oRNBc9dFZ4j4-9vh3D",
+				      refreshToken: "1/_12y25rj1xrhYJbJqZjdr9bIrAyiChyQx_wIMCyRrX0"
+				    }
+  				}
 	});
 
 	var mailOptions = {
